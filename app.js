@@ -130,51 +130,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// Sample products data
-// const sampleProducts = [
-//   {
-//     title: "The Legend of Zelda: Breath of the Wild",
-//     thumbnailURL: "https://example.com/zelda.jpg",
-//     sellerUsername: "gamer1",
-//     unitsAvailable: 5,
-//     productType: "game",
-//     rentalPricePerWeek: 10,
-//     rentalPricePerMonth: 30,
-//   },
-//   {
-//     title: "Sony DualShock 4 Controller",
-//     thumbnailURL: "https://example.com/dualshock4.jpg",
-//     sellerUsername: "seller1",
-//     unitsAvailable: 10,
-//     productType: "controller",
-//     rentalPricePerWeek: 5,
-//     rentalPricePerMonth: 15,
-//   },
-//   {
-//     title: "PlayStation 5",
-//     thumbnailURL: "https://example.com/ps5.jpg",
-//     sellerUsername: "seller2",
-//     unitsAvailable: 3,
-//     productType: "console",
-//     rentalPricePerWeek: 20,
-//     rentalPricePerMonth: 60,
-//   },
-// ];
-
-// // Endpoint to insert sample products
-// app.post("/insertSampleProducts", async (req, res) => {
-//   try {
-//     // Insert sample products into the database
-//     await Product.insertMany(sampleProducts);
-
-//     // Respond with success message
-//     res.status(200).json({ message: "Sample products inserted successfully" });
-//   } catch (error) {
-//     console.error("Error inserting sample products:", error);
-//     res.status(500).json({ message: "Internal Server Error" });
-//   }
-// });
-
 // Fetch all products endpoint
 app.get("/products", async (req, res) => {
   try {
